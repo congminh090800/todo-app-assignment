@@ -35,7 +35,7 @@ class _TodoListState extends State<TodoList> {
               element.taskName!.toLowerCase().contains(keyword!.toLowerCase()))
           .toList();
     }
-    if (todos.length == 0) {
+    if (widget.todos.length == 0) {
       return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
